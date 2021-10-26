@@ -1,10 +1,17 @@
-import React from 'react';
-
+import React from "react";
+import "./App.css";
+import axios from "axios";
+import User from "./components/User";
+import Follower from "./components/Follower";
 class App extends React.Component {
   render() {
-    return(<div>
-      Github Card
-    </div>);
+    return (
+      <div className="App">
+        <h1>Github Card</h1>
+        <User />
+        <Follower />
+      </div>
+    );
   }
 }
 
